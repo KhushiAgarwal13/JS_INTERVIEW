@@ -1,0 +1,12 @@
+const arraysAreEqual = (arr1, arr2)=>{
+
+    if(arr1.length !== arr2){
+        return false;
+    }
+
+  return    arr1.every(( num, ind)=> num === arr2[ind])
+}
+
+console.log(arraysAreEqual([1,2,3],[1,2,3]));
+console.log(arraysAreEqual([1,2,3],[1,2,4]));
+console.log(arraysAreEqual([],[])) 
